@@ -9,14 +9,14 @@ export const Product = model(
         },
         status: {
             type: String,
-           enum:['WAITING', 'IN_PRODUCTION', 'DONE'],
-           default: 'WAITING'
+            enum: ['WAITING', 'IN_PRODUCTION', 'DONE'],
+            default: 'WAITING'
         },
         createdAt: {
             type: Date,
             default: Date.now,
         },
-        product:{
+        product: {
             required: true,
             product: {
                 type: Schema.Types.ObjectId,
@@ -25,7 +25,7 @@ export const Product = model(
             },
             quantity: {
                 type: Number,
-                default:1,
+                default: 1,
             }
         }
     })

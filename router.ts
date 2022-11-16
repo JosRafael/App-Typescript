@@ -1,0 +1,51 @@
+import {Router} from 'express';
+
+export const router = Router();
+
+//casos de uso:
+// List categories
+router.get('/categories', (req, res) => {
+    res.send('Ok');
+});
+
+
+//Create categories
+router.post('/categories', (req, res) => {
+    res.send('Ok');
+});
+
+//List products
+router.get('/products', (req, res) => {
+    res.send('Ok');
+});
+
+//Create products
+router.post('/products', (req, res) => {
+    res.send('Ok');
+});
+
+//Get products by category
+router.get('/categories/:categoryId/products', (req, res) => {
+    res.send('Ok');
+});
+
+//List Orders
+router.get('/orders', (req, res) => {
+    res.send('Ok');
+});
+
+//Create order
+router.post('/orders', (req, res) => {
+    res.send('Ok');
+});
+
+//Cange order status, alteração parcial se usa metodo patch
+router.patch('/orders/:orderId', (req, res) => {
+    res.send('Ok');
+});
+
+//Delete/cancel order
+//Cange order status, alteração parcial se usa metodo patch
+router.delete('/orders/:orderId', (req, res) => {
+    res.send('Ok');
+});
